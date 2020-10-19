@@ -1,0 +1,119 @@
+
+dl.box{
+    height: 220px;
+    overflow: auto;
+}
+dl.box dt{
+    float: left;
+    width: 120px;
+}
+dl.box dd{
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 120px;
+    border-bottom: 1px dotted #aaa;
+}
+.box {
+    background:#F5F5F5;
+    border:solid #026898;
+border-width:1px 1px 1px 1px;
+    border-radius: 5px;
+padding: 10px 10px 10px 10px;
+    margin: 0 0 15px 0;
+}
+.title {
+	border-left: 13px solid #0189bb;
+	padding: 0 0 0 10px;
+    font-size: 20px;
+}
+.text{
+    font-size:15px;
+    font-weight: bold;
+    text-align:left;
+    border:solid #026898;
+border-width:0 0 1px 0;
+    margin:0 0 5px 0;
+}
+.rankingArea {
+    background:#F5F5F5;
+    border:solid #026898;
+border-width:1px 1px 1px 1px;
+    border-radius: 5px;
+padding: 10px 10px 10px 10px;
+    margin: 0 0 15px 0;
+    width:170px;
+}
+.ranking_bg{
+	border-bottom:dot; 
+	width:168px;
+    margin:0 1px;
+}
+.list ol {
+    padding: 0.3em 0.5em;
+    list-style-type: none;
+    border: none;
+    counter-reset: number;
+  }
+  .list ol li {
+    position: relative;
+    line-height: 1.5;
+    padding: 0.5em 0 0.5em 1.6em;
+  }
+  .list ol li:before {
+    position: absolute;
+    font-family: "Quicksand", sans-serif;
+    content: counter(number);
+    counter-increment: number;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ee8992;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 22px;
+  }
+.list_typeInformation{
+	font-size:65%;
+	line-height:1.2em;
+	color:#666;
+}
+.section01 {
+	overflow: hidden;
+	max-width: 640px;
+	margin: 0 auto 3%;
+}
+.itemList {
+	overflow: hidden;
+	clear: both;
+    width: 640px;
+
+}
+.itemList li {
+	float: left;
+        width: 185px;
+    margin: 0 20px 20px 0;
+    list-style-type: none;
+}
+.itemName{
+    font-size:125%;
+    color:blue;
+}
+.price{
+    font-size:85%;
+    color:red
+}
+.bnrList {
+	overflow: hidden;
+	clear: both;
+    width: 640px;
+
+}
+.bnrList li {
+	float: left;
+        width: 230px;
+    margin: 0 20px 20px 0;
+    list-style-type: none;
+}

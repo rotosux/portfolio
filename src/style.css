@@ -1,0 +1,369 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family:impact;
+    margin-top: 30px;
+}
+.navi{
+    height: 65px; 
+    text-align: center; 
+    background-color:#bbdefb;
+}
+.box {
+  margin:20px auto;
+}
+.box ul {
+  list-style: none;
+}
+
+.box ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container li {
+
+    padding: 0 60px ;
+    border-left: 1px solid #333;
+  border-right: 1px solid #333;
+    text-align:center;
+    cursor:pointer;
+    display: inline;
+}
+.container li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container li+ li {
+    border-left: 0;
+  border-right: 1px solid #333;
+}
+
+.keyvisual{
+    height: 500px; 
+    text-align: center; 
+    background-color: #bbdefb;
+    color: #333399;
+
+}
+.top {
+    display: flex;
+    text-align: center; 
+    width : 60% 
+  
+}
+#title {
+    margin-top:140px;
+    margin-left:20px;
+    font-size: 40px;
+    position:relative
+    
+}
+.star {
+    margin-left:320px;
+    display: flex;
+    font-size: 3em;
+  }
+   
+  .star1 {
+    animation: r1 3s linear infinite;
+  }
+   
+  @keyframes r1 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#profile{
+    height: 500px;
+    text-align: center;
+    background-color:#d1c4e9;
+    color: #6d6d6d;
+}
+#profile p {
+    margin-top:50px;
+    text-align: left;
+    display: inline-block;
+}
+#works{
+    height: 1000px;
+    text-align: center;
+    background-color:#ffcdd2;
+    color:#6d6d6d;
+}
+#works ul{
+    list-style:none;
+    margin: 10px;
+    padding:0;
+    display: flex;
+    flex-wrap:wrap;
+}
+#work li{
+    margin:0 5px 10px;
+}
+.workbox {
+    margin: 2em;
+    background: #dcefff;
+    width: 400px;
+    text-align: center;
+}
+.workbox .title {
+    font-size: 1.2em;
+    background: #5fb3f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.workbox p {
+    margin: 0;
+}
+#open,
+#close{
+  cursor: pointer;
+  
+}
+
+#mask,
+#mask2 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal,
+#model2 {
+  background: #fff;
+  color: #555;
+  width: 500px;
+  height: 300px;
+  padding: 40px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  transition: .4s;
+  position:fixed;
+}
+
+#modal p,
+#model2 p
+{
+  margin: 0 0 20px;
+}
+
+#mask.hidden
+ {
+  display: none;
+}
+#mask2.hidden{
+  display:none;
+}
+
+
+#modal.hidden,
+#model2.hidden {
+  transform: translate(0, -500px);
+}
+
+.boxinbox {
+  overflow: hidden;
+  zoom: 1; /*IE6バグ対策*/
+border: 1px solid DDDDDD;
+padding: 15px;
+}
+.boxinbox img{
+padding-right: 15px;
+float: left;
+}
+.boxinbox txt {
+  overflow: hidden;
+zoom: 1; /*IE6バグ対策*/
+}
+mainVisual {
+  min-height: 240px;
+  height: 50%;
+}
+.mainVisual.main01 {
+  background: url(https://unsplash.it/1024/768?image=1003) no-repeat 50% 90%;
+  background-size: cover;
+}
+.mainVisual.main02 {
+  background: url(https://unsplash.it/1024/768?image=40) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+label {
+  cursor: pointer;
+}
+
+.btn {
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  color: #fff;
+  font-size: 24px;
+  background-color: #f44336;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: 0.3s cubic-bezier(1, 0, 0, 1);
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.btn label:hover {
+  background-color: #ea1c0d;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+.btn.small label {
+  font-size: 18px;
+}
+
+.modalWrap, .modalBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 10;
+}
+
+.modalWrap {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: 0.3s cubic-bezier(1, 0, 0, 1);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  will-change: opacity;
+}
+
+.modalBg {
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: #000;
+  z-index: 2;
+}
+.modalBg label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.modalCon {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  width: 92%;
+  max-width: 640px;
+  height: 86%;
+  margin: auto;
+  z-index: 3;
+}
+
+.modalInner {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  height: 100%;
+  padding: 0 1.5em 1.5em;
+  cursor: default;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modalCloseBtn label {
+  display: inline-block;
+  padding: 0.5em;
+  color: #333;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.modalCheck:not(:checked) ~ .wrapper > *:not(.modalWrap) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+.modalCheck:not(:checked) ~ .wrapper .modalWrap {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modalCheck:checked ~ .wrapper > *:not(.modalWrap) {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+#modal00:checked ~ .wrapper #modal00Con {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal01:checked ~ .wrapper #modal01Con {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal02:checked ~ .wrapper #modal02Con {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalTtl {
+  padding: 2em 0.5em 1.5em;
+  font-size: 2em;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.modalText .modalCover {
+  margin: 0 -1.5em 1em;
+}
+.modalText p {
+  margin-bottom: 1em;
+  line-height: 1.7;
+}
